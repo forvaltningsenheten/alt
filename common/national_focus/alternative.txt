@@ -14,8 +14,12 @@ focus_tree = {
 	reset_on_civilwar = no
 	
 	
+<<<<<<< HEAD
 	#### GITHUB TEST ####
-	#SEBASTIAN TESTAR en fulgrej
+=======
+	#### GITHUB TEST Warning ändring ####
+
+>>>>>>> 464d9def5401529c22bb79c9a69fcc014844122d
 	##########DEFENCE LINES############
 	
 	focus = {
