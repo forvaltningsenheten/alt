@@ -186,7 +186,7 @@ focus_tree = {
 	focus = {
 		id = reachout
 		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = armor_effort }
+		prerequisite = { focus = landsverk1 }
 		available = { 
 			date > 1939.1.1
 			}
@@ -399,7 +399,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = armor_effort
+		id = landsverk1
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = mechanization_effort }
 		x = 0
@@ -411,9 +411,16 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 1.0
+				ahead_reduction = 1
+				uses = 1
+				category = armor
+			}
+			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = armor
 			}
 		}

@@ -1,20 +1,19 @@
 Rearmament = {
     icon = generic_political_actions
 	picture = GFX_decision_cat_picture_chi_political_support
-    visible	= { 
-		  SWE = { has_completed_focus = havsbandslinjen }
+    visible	= {
+    	SWE = { has_completed_focus = havsbandslinjen }
      }
 }
 
 ###Envoy to get back our tanks###
 
 envoy_to_germany = {
-		icon = decision_eng_trade_unions_demand
-		picture = GFX_decision_cat_picture_concessions_to_the_trade_unions
-	
-	visable = {
-		SWE = { has_completed_focus = reachout }
-	}
+	icon = decision_eng_trade_unions_demand
+	picture = GFX_decision_cat_picture_concessions_to_the_trade_unions
+    visible	= {
+    	SWE = { has_completed_focus = reachout }
+     }
 }
 	
 

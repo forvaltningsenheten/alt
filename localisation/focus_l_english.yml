@@ -2313,10 +2313,26 @@
  
  
  ###Equipment Chain###
- 
+
  cania_Vabis:0 "Scania-Vabis AB"
  Scania_Vabis_desc:0 ""Vagnsfabriks-Aktieboklaget i Södertälje" and "Maskinfabriksaktiebolaget Scania" have merged. They have together come up with a series truck-designs for swedish needs. They are called "Scania_vabis335/345/355."
  reachout:0 "Reach Out"
  reachout_desc:0 "Our production can't keep up with our need for armor. We need to reach out to other countries."
+ landsverk1:0 "AB Landsverk"
+ landsverk1_desc:0 ""AB Landsverk" is a Swedish manufacturer of diffrent machinery. They have recently, 1920, begun to manufacture military vehicles. We can contract them to develep and manufacture vehicles for our own army."" 
+
+
+
+
+
  
+  
+
+
+
+
+
+
  
+
+
