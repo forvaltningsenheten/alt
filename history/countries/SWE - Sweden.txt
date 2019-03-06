@@ -247,6 +247,14 @@ create_country_leader = {
 	}
 }
 
+create_field_marshal = {
+	name = "Olof Thörnell"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = { defensive_doctrine offensive_doctrine  }
+	skill = 4
+
+}
+
 create_corps_commander = {
 	name = "Folke Högberg"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
@@ -270,6 +278,31 @@ create_corps_commander = {
 	planning_skill = 4
 	logistics_skill = 4
 }
+
+create_corps_commander = {
+	name = "Axel Bredberg"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {  commando }
+	skill = 5
+
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Sven Alin"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {  fortress_buster }
+	skill = 5
+
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 4
+}
+
 
 create_navy_leader = {
 	name = "Claes Lindström"
