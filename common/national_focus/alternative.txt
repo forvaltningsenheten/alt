@@ -14,16 +14,7 @@ focus_tree = {
 	reset_on_civilwar = no
 	
 	
-<<<<<<< HEAD
-	#### GITHUB TEST Warning ändring 23 ####
-=======
-<<<<<<< HEAD
-	#### GITHUB TEST ####
-=======
-	#### GITHUB TEST Warning ändring ####
->>>>>>> 513aa88db862c30ddc080cd84fa9adaa7d2969be
 
->>>>>>> 464d9def5401529c22bb79c9a69fcc014844122d
 	##########DEFENCE LINES############
 	
 	focus = {
@@ -203,6 +194,14 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = armor_effort
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			SWE = {country_event = {id = generic.30 } }
+		}
+		
 		
 	}
 	
@@ -411,7 +410,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			SWE = {country_event = { days = 1 id = generic.30 } }
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.0

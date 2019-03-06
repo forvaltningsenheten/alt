@@ -17,5 +17,11 @@
 
  Unemployed_1:0 "The unemployed in Stockholm"
  Unemployed_1_desc:0 "We can use the uneployed to help out with our construction efforts in Stockholm"
+ 
+ envoy_to_germany:0 "Envoy"
+ envoy_to_germany_desc:0 "We need to send an envoy to reacquire the tanks Germany confiscated from Czechoslovakia"
+ 
+ envoy_to_germany.d:0 "Send the envoy"
+ 
 
 

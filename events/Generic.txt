@@ -17,13 +17,12 @@ country_event = {
 	
 	trigger = {
 		tag = SWE
-		SWE = { has_completed_focus = armor_effort }
+		SWE = { has_completed_focus = reachout }
 	}	
 	
 	option = {
 		name = generic.30.a
 		ai_chance = { factor = 100 }
-		add_equipment_to_stockpile = { type = light_tank_equipment amount = 50 producer = GER } 
 	}
 }  
 

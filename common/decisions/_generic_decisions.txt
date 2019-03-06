@@ -8,8 +8,20 @@ Rearmament = {
 			}
 		}
 	}
-}
 
+
+
+envoy_to_germany = {
+	envoy_to_germany.d = {
+	
+		icon = decision_generic_decision
+		
+		complete_effect = {
+			add_political_power = -100
+			add_equipment_to_stockpile = { type = light_tank_equipment amount = 90 producer = GER }
+		}
+	}
+}
 
 political_actions = {
 	
