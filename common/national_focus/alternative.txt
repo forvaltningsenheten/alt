@@ -187,7 +187,7 @@ focus_tree = {
 	focus = {
 		id = reachout
 		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus armor_effort }
+		prerequisite = { focus = armor_effort }
 		available = { 
 			date > 1939.1.1
 			}
