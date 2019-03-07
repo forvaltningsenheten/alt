@@ -2322,6 +2322,12 @@
  landsverk1_desc:0 ""AB Landsverk" is a Swedish manufacturer of diffrent machinery. They have recently, 1920, begun to manufacture military vehicles. We can contract them to develep and manufacture vehicles for our own army."" 
 
 
+ ###Naval Chain####
+
+varven:0 "Göteborgs varv"
+varven_desc:0 "The expansion of our navy should be our first priority. Assign all available resources to new Dockyards and research into light surface ships so we can patrol our shores."
+
+
 
 
 

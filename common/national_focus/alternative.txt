@@ -411,15 +411,9 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = CAS_bonus
-				bonus = 1.0
-				ahead_reduction = 1
-				uses = 1
-				category = armor
-			}
-			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 1.0
+				bonus = 0.5
+				ahead_reduction = 1
 				uses = 1
 				category = armor
 			}
@@ -755,11 +749,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = naval_effort
+		id = varven
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 4
+		x = 18
 		y = 0
-		relative_position_id = aviation_effort
+		#relative_position_id = aviation_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -783,7 +777,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			navy_experience = 25
+			navy_experience = 30
 			if = {
 				limit = {
 					NOT = {
@@ -884,11 +878,11 @@ focus_tree = {
 	focus = {
 		id = flexible_navy
 		icon = GFX_goal_generic_build_navy
-		prerequisite = { focus = naval_effort }
+		#prerequisite = { focus = naval_effort }
 		mutually_exclusive = { focus = large_navy }
-		x = -1
+		x = 17
 		y = 1
-		relative_position_id = naval_effort
+		#relative_position_id = naval_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -924,11 +918,11 @@ focus_tree = {
 	focus = {
 		id = large_navy
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = naval_effort }
+		#prerequisite = { focus = naval_effort }
 		mutually_exclusive = { focus = flexible_navy }
-		x = 1
+		x = 19
 		y = 1
-		relative_position_id = naval_effort
+		#relative_position_id = naval_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -2271,7 +2265,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = why_we_fight
+		id = why_we_fight1
 		icon = GFX_goal_generic_propaganda
 		prerequisite = { focus = foreign_expeditions focus = deterrence }
 		available = { 
@@ -2336,7 +2330,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ideological_fanaticism
+		id = ideological_fanaticism1
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = paramilitarism focus = political_commissars }
 		x = 1
@@ -2361,7 +2355,6 @@ focus_tree = {
 	focus = {
 		id = technology_sharing
 		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = ideological_fanaticism focus = why_we_fight }
 		available = {
 			has_war = yes
 			is_in_faction = yes
@@ -2373,7 +2366,7 @@ focus_tree = {
 				}
 			}
 		}		
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = ideological_fanaticism
 		cost = 10
