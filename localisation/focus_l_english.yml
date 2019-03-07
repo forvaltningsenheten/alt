@@ -2279,7 +2279,7 @@
  
  ###Alternative Sweden####
  
- SWE_Army_effort:0 "Försvarsbeslutet"
+ swe_army_effort:0 "Försvarsbeslutet"
  SWE_Army_effort_desc:0 "Sweden has to adapt to the growing tensions in Europe."
  FMV:0 "Arméförvaltningen"
  FMV_desc:0 "Arméförvaltningen needs an increased budget to keep up with increasing demands of the Swedish Army."
@@ -2362,8 +2362,41 @@ doctrine_effort1_desc:0 "The military doctrines that defined ground combat in th
 doctrine_effort_21:0 ""Bright Minds""
 doctrine_effort_21_desc:0 "The battlefield has changed not just in the interbellum years, but over the course of recent conflicts. We must continuously reevaluate our doctrines to reflect this."
 
-
-
+###Industrial Chain###
+swe_industrial_effort_desc:0 "Focus all our political efforts on building up the civilian industry in a great leap forward."
+swe_industrial_effort_2:0 "Industrial Effort II"
+swe_industrial_effort_2_desc:0 "With iron will and a relentless work ethic, we can mobilize the people in another great industrial effort."
+swe_construction_effort:0 "Construction Effort"
+swe_construction_effort_tt:0 "Not enough building slots for §YCivilian Factories§!"
+swe_construction_effort_desc:0 "Civilian industrial capacity must not be underestimated even when war looms over the world."
+swe_production_effort:0 "Armament Effort"
+swe_production_effort_tt:0 "Not enough building slots for §YMilitary Factory§!"
+swe_production_effort_desc:0 "If you can build tractors, you can build tanks! We must not allow our military production capacity to lag behind."
+swe_construction_effort_2:0 "Construction Effort II"
+swe_construction_effort_2_desc:0 "Continuing to expand our factories will allow us to speed up production of goods for trade and further construction efforts."
+swe_production_effort_2:0 "Armament Effort II"
+swe_production_effort_2_desc:0 "Trying to adapt civilian factories to produce military equipment is inefficient. We should focus on preparing military production now."
+swe_production_effort_3:0 "Armament Effort III"
+swe_production_effort_3_desc:0 "Continued efforts to expand our military factories are necessary to meet the demands for new equipment."
+swe_infrastructure_effort:0 "Infrastructure Effort"
+swe_infrastructure_effort_desc:0 "A country without proper infrastructure cannot pursue advanced projects or constructions."
+swe_infrastructure_effort_tt:0 "Not enough building slots for §YInfrastructure§!"
+swe_infrastructure_effort_2:0 "Infrastructure Effort II"
+swe_infrastructure_effort_2_desc:0 "Extending our infrastructure further will enable the transports and communications necessary for high-tech clandestine projects."
+swe_construction_effort_3:0 "Construction Effort III"
+swe_construction_effort_3_desc:0 "Expansion of our infrastructure network has significantly improved our capacity for construction."
+swe_nuclear_effort:0 "Nuclear Effort"
+swe_nuclear_effort_desc:0 "Standing on the edge of a world-changing discovery, we cannot let others light the fire that may one day consume the Earth."
+swe_extra_tech_slot:0 "Extra Research Slot"
+swe_extra_tech_slot_desc:0 "Our industrial expansion and other recent advances might allow us to conduct more R&D in parallel."
+swe_extra_tech_slot_2:0 "Extra Research Slot II"
+swe_extra_tech_slot_2_desc:0 "The rapid industrialization of our nation has opened up new opportunities in R&D that we should pursue."
+swe_technology_sharing:0 "Technology Sharing"
+swe_technology_sharing_desc:0 "By sharing technological advances with our allies, our whole faction will be able to conduct wartime R&D more efficiently."
+swe_secret_weapons:0 "Secret Weapons"
+swe_secret_weapons_desc:0 "It is tempting to expend all extra resources into developing tanks and planes, but the secret to winning wars lies in whole new fields of science; electronics, rocketry and nuclear research."
+swe_rocket_effort:0 "Rocket Effort"
+swe_rocket_effort_desc:0 "Rocket and jet engines allow for unprecedented speeds for unmanned and manned vessels alike. Pioneering these technologies will allow us to take the enemy by surprise."
 
  
   
