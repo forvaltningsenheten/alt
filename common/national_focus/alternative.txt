@@ -12,6 +12,46 @@ focus_tree = {
 
 	default = yes
 	reset_on_civilwar = no
+
+
+	##########Military Doctrines######
+
+	focus = {
+		id= forsvarsdepartementet
+		icon = GFX_focus_generic_combined_arms
+		x = 23
+		Y = 0
+		cost = 5
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_manpower = 500
+			}
+	}
+
+
+	#####Territoral expansion####
+
+	focus = {
+		id= expansion
+		icon = GFX_focus_eng_global_defense
+		prerequisite = { focus = forsvarsdepartementet }
+		prerequisite = { focus = SWE_Army_effort}
+		x = 13
+		y = 1
+		cost5
+		available_if_capitulated = yes
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = communism
+				has_government = neutrality
+			}
+		}
+
+
+	}
 	
 	
 
@@ -22,7 +62,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = SWE_Army_effort }
 		prerequisite = { focus = industrial_effort}
-		x = 4
+		x = -4
 		Y = 1
 		relative_position_id = SWE_Army_effort
 		cost = 5
@@ -127,7 +167,8 @@ focus_tree = {
 		id= kadettkamrater
 		icon = GFX_focus_generic_military_academy
 		prerequisite = { focus = political_effort }
-		x = 5
+		prerequisite = { focus = forsvarsdepartementet}
+		x = -6
 		Y = 1
 		relative_position_id = political_effort
 		cost = 5
@@ -191,9 +232,9 @@ focus_tree = {
 			date > 1939.1.1
 			}
 		
-		x = 1
+		x = 0
 		y = 1
-		relative_position_id = armor_effort
+		relative_position_id = landsverk1
 		cost = 10
 		
 		available_if_capitulated = yes
@@ -208,8 +249,9 @@ focus_tree = {
 	focus = {
 		id = SWE_Army_effort
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 1
+		x = 8
 		y = 0
+		relative_position_id = industrial_effort
 		cost = 5
 
 		available_if_capitulated = yes
@@ -281,12 +323,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = doctrine_effort
+		id = doctrine_effort1
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = SWE_Army_effort }
+		prerequisite = { focus = forsvarsdepartementet }
 		x = 0
-		y = 2
-		relative_position_id = SWE_Army_effort
+		y = 1
+		relative_position_id = forsvarsdepartementet
 		cost = 10
 
 		available_if_capitulated = yes
@@ -354,12 +396,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = doctrine_effort_2
+		id = doctrine_effort_21
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = doctrine_effort }
+		prerequisite = { focus = doctrine_effort1 }
 		x = 0
 		y = 2
-		relative_position_id = doctrine_effort
+		relative_position_id = doctrine_effort1
 		cost = 10
 
 		available_if_capitulated = yes
@@ -380,7 +422,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = FMV_2 }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = FMV_2
 		cost = 10
 
@@ -402,6 +444,7 @@ focus_tree = {
 		id = landsverk1
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = mechanization_effort }
+		prerequisite = { focus = FMV_3 }
 		x = 0
 		y = 2
 		relative_position_id = mechanization_effort
@@ -423,12 +466,10 @@ focus_tree = {
 	focus = {
 		id = SWE_special_forces
 		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = FMV_3 }
-		prerequisite = { focus = doctrine_effort_2 }
-		prerequisite = { focus = armor_effort }
-		x = 1
-		y = 1
-		relative_position_id = equipment_effort_3
+		prerequisite = { focus = SWE_Army_effort }
+		x = 0
+		y = 2
+		relative_position_id = SWE_Army_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -450,17 +491,19 @@ focus_tree = {
 	}
 
 	focus = {
-		id = aviation_effort
+		id = aviation_effort1
 		icon = GFX_goal_generic_build_airforce
-		x = 14
-		y = 0
+		prerequisite = { focus = aviation_effort_21 }
+		x = 0
+		y = 2
+		relative_position_id = aviation_effort_21
 		cost = 10
 
 		available_if_capitulated = yes
 
 
 		complete_tooltip = {
-			air_experience = 25
+			
 			if = { limit = { has_country_flag = aviation_effort_AB }
 				add_building_construction = {
 					type = air_base
@@ -477,8 +520,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			air_experience = 25
-
 			if = {
 				limit = {
 					capital_scope = {
@@ -533,13 +574,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = fighter_focus
+		id = fighter_focus1
 		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = aviation_effort }
-		mutually_exclusive = { focus = bomber_focus }
-		x = -1
+		prerequisite = { focus = aviation_effort1 }
+		mutually_exclusive = { focus = bomber_focus1 }
+		x = 1
 		y = 1
-		relative_position_id = aviation_effort
+		relative_position_id = aviation_effort1
 		cost = 10
 
 		available_if_capitulated = yes
@@ -561,13 +602,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = bomber_focus
+		id = bomber_focus1
 		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = aviation_effort }
-		mutually_exclusive = { focus = fighter_focus }
-		x = 1
+		prerequisite = { focus = aviation_effort1 }
+		mutually_exclusive = { focus = fighter_focus1 }
+		x = -1
 		y = 1
-		relative_position_id = aviation_effort
+		relative_position_id = aviation_effort1
 		cost = 10
 
 		available_if_capitulated = yes
@@ -586,19 +627,19 @@ focus_tree = {
 	}
 
 	focus = {
-		id = aviation_effort_2
-		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus = bomber_focus focus = fighter_focus }
-		x = -1
+		id = aviation_effort_21
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = forsvarsdepartementet }
+		x = 3
 		y = 1
-		relative_position_id = bomber_focus
+		relative_position_id = forsvarsdepartementet
 		cost = 10
 
 		available_if_capitulated = yes
 
 
 		complete_tooltip = {
-			air_experience = 25
+			air_experience = 50
 			if = { limit = { has_country_flag = aviation_effort_2_AB }
 				add_building_construction = {
 					type = air_base
@@ -614,7 +655,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			air_experience = 25
+			air_experience = 50
 			if = {
 				limit = {
 					capital_scope = {
@@ -673,12 +714,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CAS_effort
+		id = CAS_effort1
 		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = aviation_effort_2 }
+		prerequisite = { focus = aviation_effort_21 }
+		mutually_exclusive = { focus = NAV_effort1}
 		x = -1
 		y = 1
-		relative_position_id = aviation_effort_2
+		relative_position_id = aviation_effort_21
 		cost = 10
 
 		available_if_capitulated = yes
@@ -695,11 +737,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = rocket_effort
+		id = rocket_effort1
 		icon = GFX_focus_rocketry
-		prerequisite = { focus = aviation_effort_2 }
-		prerequisite = { focus = infrastructure_effort }
-		x = 0
+		#prerequisite = { focus = aviation_effort_2 }
+		#prerequisite = { focus = infrastructure_effort }
+		x = 1
 		y = 2
 		relative_position_id = aviation_effort_2
 		cost = 10
@@ -726,13 +768,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = NAV_effort
+		id = NAV_effort1
 		icon = GFX_goal_generic_air_naval_bomber
-		prerequisite = { focus = aviation_effort_2 }
-		prerequisite = { focus = flexible_navy }
+		prerequisite = { focus = aviation_effort_21 }
+		mutually_exclusive = { focus = CAS_effort1}
 		x = 1
 		y = 1
-		relative_position_id = aviation_effort_2
+		relative_position_id = aviation_effort_21
 		cost = 10
 
 		available_if_capitulated = yes
@@ -750,10 +792,11 @@ focus_tree = {
 
 	focus = {
 		id = varven
-		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 18
-		y = 0
-		#relative_position_id = aviation_effort
+		icon = GFX_goal_generic_construct_naval_dockyard	
+		prerequisite = { focus = forsvarsdepartementet }
+		x = -3
+		y = 1
+		relative_position_id = forsvarsdepartementet
 		cost = 10
 
 		available_if_capitulated = yes
@@ -876,13 +919,14 @@ focus_tree = {
 	}
 
 	focus = {
-		id = flexible_navy
+		id = flexible_navy1
 		icon = GFX_goal_generic_build_navy
-		#prerequisite = { focus = naval_effort }
-		mutually_exclusive = { focus = large_navy }
-		x = 17
+		prerequisite = { focus = forsvarsdepartementet }
+		prerequisite = { focus = varven }
+		mutually_exclusive = { focus = large_navy1 }
+		x = -1
 		y = 1
-		#relative_position_id = naval_effort
+		relative_position_id = varven
 		cost = 10
 
 		available_if_capitulated = yes
@@ -916,13 +960,14 @@ focus_tree = {
 	}
 
 	focus = {
-		id = large_navy
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		#prerequisite = { focus = naval_effort }
-		mutually_exclusive = { focus = flexible_navy }
-		x = 19
+		id = large_navy1
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = forsvarsdepartementet }
+		prerequisite = { focus = varven }
+		mutually_exclusive = { focus = flexible_navy1 }
+		x = 1
 		y = 1
-		#relative_position_id = naval_effort
+		relative_position_id = varven
 		cost = 10
 
 		available_if_capitulated = yes
@@ -952,12 +997,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = submarine_effort
+		id = submarine_effort1
 		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = flexible_navy focus = large_navy }
+		prerequisite = { focus = destroyer_effort1 }
 		x = 0
 		y = 1
-		relative_position_id = flexible_navy
+		relative_position_id = destroyer_effort1
 		cost = 10
 
 		available_if_capitulated = yes
@@ -988,12 +1033,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = cruiser_effort
-		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = large_navy focus = flexible_navy }
+		id = cruiser_effort1
+		icon = GFX_focus_generic_cruiser2
+		prerequisite = { focus = large_navy1 focus = flexible_navy1 }
 		x = 0
 		y = 1
-		relative_position_id = large_navy
+		relative_position_id = large_navy1
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1025,12 +1070,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = destroyer_effort
-		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus = submarine_effort }
+		id = destroyer_effort1
+		icon = GFX_focus_generic_destroyer
+		prerequisite = { focus = flexible_navy1 focus = large_navy1 }
 		x = 0
 		y = 1
-		relative_position_id = submarine_effort
+		relative_position_id = flexible_navy1
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1061,12 +1106,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = capital_ships_effort
-		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = cruiser_effort }
+		id = capital_ships_effort1
+		icon = GFX_focus_generic_navy_battleship2
+		prerequisite = { focus = cruiser_effort1 }	
 		x = 0
 		y = 1
-		relative_position_id = cruiser_effort
+		relative_position_id = cruiser_effort1
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1102,7 +1147,7 @@ focus_tree = {
 	focus = {
 		id = industrial_effort
 		icon = GFX_goal_generic_production
-		x = 9
+		x = 1
 		y = 0
 		cost = 10
 
@@ -1764,10 +1809,10 @@ focus_tree = {
 	focus = {
 		id = nuclear_effort
 		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = infrastructure_effort_2 }
-		x = -2
+		prerequisite = { focus = secret_weapons }
+		x = 0
 		y = 1
-		relative_position_id = infrastructure_effort_2
+		relative_position_id = secret_weapons
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1860,8 +1905,9 @@ focus_tree = {
 	focus = {
 		id = political_effort
 		icon = GFX_goal_generic_demand_territory
-		x = 24
+		x = 15
 		y = 0
+		relative_position_id = forsvarsdepartementet
 		cost = 10
 
 		available_if_capitulated = yes

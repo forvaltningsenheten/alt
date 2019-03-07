@@ -2324,9 +2324,43 @@
 
  ###Naval Chain####
 
-varven:0 "Göteborgs varv"
+varven:0 "Göteborgs Shipyards"
 varven_desc:0 "The expansion of our navy should be our first priority. Assign all available resources to new Dockyards and research into light surface ships so we can patrol our shores."
+flexible_navy1:0 "Flexible Navy"
+flexible_navy1_desc:0 "Reinventing naval warfare to account for the advances in submarine technology will allow us to strike efficiently against enemy convoys."
+large_navy1:0 "Large Navy"
+large_navy1_desc:0 "Adapting our naval doctrines to accommodate large ships and ensuring the safety of our trade convoys will teach us much about what sort of ships we need."
+submarine_effort1:0 "Submarine Effort"
+submarine_effort1_desc:0 "Submarine warfare is the most exciting naval development since the invention of the torpedo boat. We would do well to not just protect against submarines, but also use them against enemy shipping."
+cruiser_effort1:0 "Cruiser Effort"
+cruiser_effort1_desc:0 "Before making forays into advanced battleship research, the smaller cruisers are in need of replacement."
+destroyer_effort1:0 "Destroyer Effort"
+destroyer_effort1_desc:0 "Studying the design and strategic use of submarines, we have also learned how to counter those strategies. Destroyers will be crucial for this."
+capital_ships_effort1:0 "Capital Ship Effort"
+capital_ships_effort1_desc:0 "The nation with the most battleships will rule the oceans. Battleships and carriers represent the old and the new in naval superiority."
 
+
+###Air chain###
+
+aviation_effort1:0 "Kungliga Flygförvaltningen"
+aviation_effort_tt:0 "Not enough building slots for §YAir Base§!"
+aviation_effort1_desc:0 "In order to supplement the production at SAAB, "Kungliga Flygförvaltningen" has to start its own development in parallel with SAAB to design a new fighter aircraft. To manufacture the aircraft, we will form a new organization called "Flygförvaltningens Flygverkstad Stockholm" or "FFVS"."
+fighter_focus1:0 "Fighter Focus"
+fighter_focus1_desc:0 "We have not seen that last of dogfights in the Great War. Keeping ahead in the development of fighter planes will give us an edge in the future."
+bomber_focus1:0 "Bomber Focus"
+bomber_focus1_desc:0 "When people of the future speak of the horror to today's wars, fire raining from the skies will prominently feature. We will do our best to ensure those stories are told by our enemies."
+aviation_effort_21:0 "SAAB"
+aviation_effort_21_desc:0 "Svenska Aeroplan Aktiebolaget, SAAB, will construct our needed dive-bombers and regular bombers. We will also buy some trainer aircraft to train a new generation of pilots!"
+CAS_effort1:0 "CAS Effort"
+CAS_effort1_desc:0 "A modern army needs support from vehicles not only on the ground, but also in the air."
+
+
+###Doctrine Chain####
+
+doctrine_effort1:0 ""The Wargame""
+doctrine_effort1_desc:0 "The military doctrines that defined ground combat in the Great War are outdated. We must put our greatest minds to the task of shaping the military thought of tomorrow."
+doctrine_effort_21:0 ""Bright Minds""
+doctrine_effort_21_desc:0 "The battlefield has changed not just in the interbellum years, but over the course of recent conflicts. We must continuously reevaluate our doctrines to reflect this."
 
 
 
