@@ -60,9 +60,9 @@ focus_tree = {
 		id= fortfocus
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = SWE_Army_effort }
-		prerequisite = { focus = industrial_effort}
+		prerequisite = { focus = swe_industrial_effort}
 		x = 4
-		Y = 1
+		Y = 2
 		relative_position_id = SWE_Army_effort
 		cost = 5
 		
@@ -244,9 +244,8 @@ focus_tree = {
 	focus = {
 		id = SWE_Army_effort
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 0
+		x = 1
 		y = 0
-		#relative_position_id = industrial_effort
 		cost = 5
 
 		available_if_capitulated = yes
@@ -732,13 +731,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = rocket_effort1
+		id = swe_rocket_effort
 		icon = GFX_focus_rocketry
-		#prerequisite = { focus = aviation_effort_2 }
-		#prerequisite = { focus = infrastructure_effort }
-		x = 1
-		y = 2
-		relative_position_id = aviation_effort_2
+		prerequisite = { focus = swe_secret_weapons }
+		x = 2
+		y = 1
+		relative_position_id = swe_secret_weapons
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1140,7 +1138,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = industrial_effort
+		id = swe_industrial_effort
 		icon = GFX_goal_generic_production
 		x = 10
 		y = 0
@@ -1181,12 +1179,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = construction_effort
+		id = swe_construction_effort
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = industrial_effort }
+		prerequisite = { focus = swe_industrial_effort }
 		x = -1
 		y = 1
-		relative_position_id = industrial_effort
+		relative_position_id = swe_industrial_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1254,12 +1252,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = production_effort
+		id = swe_production_effort
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = industrial_effort }
+		prerequisite = { focus = swe_industrial_effort }
 		x = 1
 		y = 1
-		relative_position_id = industrial_effort
+		relative_position_id = swe_industrial_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1326,12 +1324,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = construction_effort_2
+		id = swe_construction_effort_2
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = construction_effort }
+		prerequisite = { focus = swe_construction_effort }
 		x = 0
 		y = 1
-		relative_position_id = construction_effort
+		relative_position_id = swe_construction_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1398,12 +1396,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = production_effort_2
+		id = swe_production_effort_2
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = production_effort }
+		prerequisite = { focus = swe_production_effort }
 		x = 0
 		y = 1
-		relative_position_id = production_effort
+		relative_position_id = swe_production_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1470,12 +1468,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = infrastructure_effort
+		id = swe_infrastructure_effort
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = construction_effort_2 }
+		prerequisite = { focus = swe_construction_effort_2 }
 		x = 0
 		y = 1
-		relative_position_id = construction_effort_2
+		relative_position_id = swe_construction_effort_2
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1564,12 +1562,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = production_effort_3
+		id = swe_production_effort_3
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = production_effort_2 }
+		prerequisite = { focus = swe_production_effort_2 }
 		x = 0
 		y = 1
-		relative_position_id = production_effort_2
+		relative_position_id = swe_production_effort_2
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1636,12 +1634,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = infrastructure_effort_2
+		id = swe_infrastructure_effort_2
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = infrastructure_effort }
+		prerequisite = { focus = swe_infrastructure_effort }
 		x = 0
 		y = 1
-		relative_position_id = infrastructure_effort
+		relative_position_id = swe_infrastructure_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1730,12 +1728,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = construction_effort_3
+		id = swe_construction_effort_3
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = infrastructure_effort }
+		prerequisite = { focus = swe_infrastructure_effort }
 		x = 2
 		y = 1
-		relative_position_id = infrastructure_effort
+		relative_position_id = swe_infrastructure_effort
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1802,12 +1800,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = nuclear_effort
+		id = swe_nuclear_effort
 		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = secret_weapons }
+		prerequisite = { focus = swe_secret_weapons }
 		x = 0
 		y = 1
-		relative_position_id = secret_weapons
+		relative_position_id = swe_secret_weapons
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1830,12 +1828,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = extra_tech_slot
+		id = swe_extra_tech_slot
 		icon = GFX_focus_research
-		prerequisite = { focus = infrastructure_effort_2 }
-		x = 0
+		prerequisite = { focus = swe_infrastructure_effort_2 }
+		x = -1
 		y = 1
-		relative_position_id = infrastructure_effort_2
+		relative_position_id = swe_infrastructure_effort_2
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1846,9 +1844,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = extra_tech_slot_2
+		id = swe_extra_tech_slot_2
 		icon = GFX_focus_research
-		prerequisite = { focus = extra_tech_slot }
+		prerequisite = { focus = swe_extra_tech_slot }
 		available = {
 			num_of_factories > 50
 		}
@@ -1856,7 +1854,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		x = 0
 		y = 1
-		relative_position_id = extra_tech_slot
+		relative_position_id = swe_extra_tech_slot
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1867,12 +1865,12 @@ focus_tree = {
 	}	
 
 	focus = {
-		id = secret_weapons
+		id = swe_secret_weapons
 		icon = GFX_goal_generic_secret_weapon
-		prerequisite = { focus = infrastructure_effort_2 }
-		x = 2
+		prerequisite = { focus = swe_infrastructure_effort_2 }
+		x = 1
 		y = 1
-		relative_position_id = infrastructure_effort_2
+		relative_position_id = swe_infrastructure_effort_2
 		cost = 10
 
 		available_if_capitulated = yes
