@@ -61,7 +61,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = SWE_Army_effort }
 		prerequisite = { focus = industrial_effort}
-		x = 4
+		x = -4
 		Y = 1
 		relative_position_id = SWE_Army_effort
 		cost = 5
@@ -244,9 +244,9 @@ focus_tree = {
 	focus = {
 		id = SWE_Army_effort
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 0
+		x = 8
 		y = 0
-		#relative_position_id = industrial_effort
+		relative_position_id = industrial_effort
 		cost = 5
 
 		available_if_capitulated = yes
@@ -1142,7 +1142,7 @@ focus_tree = {
 	focus = {
 		id = industrial_effort
 		icon = GFX_goal_generic_production
-		x = 10
+		x = 1
 		y = 0
 		cost = 10
 
