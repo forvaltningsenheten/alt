@@ -18,7 +18,7 @@ focus_tree = {
 	focus = {
 		id= forsvarsdepartementet
 		icon = GFX_focus_generic_combined_arms
-		x = 23
+		x = 30
 		Y = 0
 		cost = 5
 		
@@ -29,18 +29,71 @@ focus_tree = {
 			}
 	}
 
+	######Own Faction#####
+
+	focus = {
+		id= swe_faction
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = forsvarsdepartementet }
+		prerequisite = { focus = swe_army_effort }
+		prerequisite = { focus = swe_political_effort }
+		x = 22
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = swe_expansion }
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+			create_faction = guardians_of_the_north
+		}
+
+	}
+
+	focus = {
+		id= swe_inv_norway
+		icon = GFX_goal_generic_major_alliance
+		prerequisite = { focus = forsvarsdepartementet }
+		prerequisite = { focus = swe_army_effort }
+		prerequisite = { focus = swe_political_effort }
+		x = 0
+		y = 1
+		relative_position_id = swe_faction
+		cost = 5
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = swe_expansion }
+		available = {
+			is_faction_leader = yes
+		}
+
+
+
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {	
+				NOR = {
+					custom_effect_tooltip = POL_invite_to_faction_tooltip
+				}
+			}
+	}
+
+
+
+
 
 	#####Territoral expansion####
 
 	focus = {
-		id= expansion
+		id= swe_expansion
 		icon = GFX_focus_eng_global_defense
 		prerequisite = { focus = forsvarsdepartementet }
-		prerequisite = { focus = swe_army_effort}
-		x = 16
+		prerequisite = { focus = swe_army_effort }
+		prerequisite = { focus = swe_political_effort }
+		x = 18
 		y = 1
-		cost5
+		cost = 5
 		available_if_capitulated = yes
+		mutually_exclusive = { focus = swe_faction }
 		available = {
 			OR = {
 				has_government = fascism
@@ -49,9 +102,83 @@ focus_tree = {
 			}
 		}
 
+		completion_reward = {
+			set_rule = { can_create_factions = yes }
+			create_faction = stormakten		
+			add_stability = -0.2
+			add_war_support = 0.1
+			}
+	}
+
+
+	focus = {
+		id= swe_retake_aland
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = swe_expansion }
+		x = -1
+		y = 1
+		relative_position_id = swe_expansion
+		cost = 10
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_state_core = 145		
+				create_wargoal = {
+					type = take_state_focus
+					target = FIN
+					generator = { 145 }
+				}
+		}
 
 	}
-	
+
+
+	focus = {
+		id= swe_retake_denmark
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = swe_expansion }
+		x = 1
+		y = 1
+		relative_position_id = swe_expansion
+		cost = 10
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_state_core = 145		
+				create_wargoal = {
+					type = take_state_focus
+					target = DEN
+					generator = { 145 }
+				}
+		}
+
+	}
+
+	focus = {
+		id= swe_retake_norway
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = swe_expansion }
+		x = -3
+		y = 1
+		relative_position_id = swe_expansion
+		cost = 10
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_state_core = 110
+			add_state_core = 142
+			add_state_core = 143
+			add_state_core = 144		
+				create_wargoal = {
+					type = annex_everything
+					target = NOR
+					generator = { 110 }
+				}
+		}
+
+	}	
+
+
 	
 
 	##########DEFENCE LINES############
@@ -164,10 +291,11 @@ focus_tree = {
 		id= kadettkamrater
 		icon = GFX_focus_generic_military_academy
 		prerequisite = { focus = swe_political_effort }
-		prerequisite = { focus = forsvarsdepartementet}
-		x = -6
+		prerequisite = { focus = forsvarsdepartementet }
+		prerequisite = { focus = fortfocus }
+		x = 3
 		Y = 1
-		relative_position_id = political_effort
+		relative_position_id = fortfocus
 		cost = 5
 		
 		available_if_capitulated = yes
@@ -244,7 +372,7 @@ focus_tree = {
 	focus = {
 		id = swe_army_effort
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 1
+		x = 6
 		y = 0
 		cost = 5
 
@@ -1140,7 +1268,7 @@ focus_tree = {
 	focus = {
 		id = swe_industrial_effort
 		icon = GFX_goal_generic_production
-		x = 10
+		x = 1
 		y = 0
 		cost = 10
 
