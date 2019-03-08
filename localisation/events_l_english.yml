@@ -3185,4 +3185,13 @@
  generic.30.t:0 "Sweden reaches out to buy tanks"
  generic.30.d:0 "We contacted Czechoslovakia to acquire the tanks for our armored regiments. unfortunately when they were about to get shiped, Nazi Germany confiscated them. We need to send envoy to Germany to get them back."
  generic.30.a:0 "Thieves!"
- 
+
+ generic.swe10.t:0 "[From.GetName] Requests [Root.GetAdjective] Participation in the [From.GetFactionName]"
+ generic.swe10.d:0 "With the signing of a treaty of friendship between our nations, [From.GetName] has requested that [Root.GetName] joins them in their [From.GetFactionName], to unite against the growing threats that surround our nations. Whether communist or fascist, [From.GetName] promises to stand up for [Root.GetAdjective] interests."
+ generic.swe10.a:0 "[Root.GetName] stands with its brothers."
+ generic.swe10.b:0 "[Root.GetName] can only survive on its own."
+
+ swe.nor20.t:0 "[From.GetName] Refuses to Join [Root.GetFactionName]"
+ swe.nor20.d:0 "In a foolish act of imagined self-preservation, [From.GetLeader] today announced that [From.GetName] will refrain from any diplomatic action that may be seen as threatening to their powerful neighbors. It has therefore declined our request that they join the [Root.GetFactionName]."
+ swec.nor20.a:0 "The only safety is standing together.
+

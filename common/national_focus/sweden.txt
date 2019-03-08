@@ -65,16 +65,13 @@ focus_tree = {
 			is_faction_leader = yes
 		}
 
-
-
 		ai_will_do = {
 			factor = 10
 		}
-		completion_reward = {	
-				NOR = {
-					custom_effect_tooltip = POL_invite_to_faction_tooltip
-				}
+		completion_reward = {
+			NOR = { country_event = { id = generic.swe10 = 1 }
 			}
+		}
 	}
 
 

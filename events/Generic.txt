@@ -27,6 +27,77 @@ country_event = {
 }  
 
 
+###Norway gets event#####
+
+country_event = {
+	id = generic.swe10
+	title = generic.swe10.t
+	desc = generic.swe10.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SWE
+		SWE = { has_completed_focus = swe_inv_norway }
+	}	
+	
+	option = { #Enter alliance
+		name = generic.swe10.a
+		ai_chance = { 
+			factor = 100
+		}
+		SWE = {
+			add_to_faction = ROOT
+			ROOT = {
+				add_ai_strategy = {
+					type = alliance
+					id = "SWE"
+					value = 200
+				}
+			}
+			
+	}
+		}
+	option = { #refuse alliance
+		name = generic.swe10.b
+		SWE = {
+		country_event = { id = generic.nor20 days = 1 }
+		}
+		ai_chance = {
+			factor = 10
+		}
+		effect_tooltip = {
+			SWE = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = ROOT
+				}
+			}
+		}
+
+	}
+ 	
+}
+
+country_event = {
+	id = swe.nor20
+	title = swe.nor20.t
+	desc = swe.nor20.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+
+	option = {
+		name = swe.swe20.a
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = FROM
+		}
+	}
+}
 
 
 # President dies
