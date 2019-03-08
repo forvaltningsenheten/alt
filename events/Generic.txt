@@ -64,7 +64,7 @@ country_event = {
 	option = { #refuse alliance
 		name = generic.swe10.b
 		SWE = {
-		country_event = { id = generic.nor20 days = 1 }
+		country_event = { id = generic.50 days = 1 }
 		}
 		ai_chance = {
 			factor = 10
@@ -83,15 +83,15 @@ country_event = {
 }
 
 country_event = {
-	id = swe.nor20
-	title = swe.nor20.t
-	desc = swe.nor20.d
+	id = generic.50
+	title = generic.50.t
+	desc = genric.50.d
 	picture = GFX_report_event_polish_tanks_01
 	
 	is_triggered_only = yes
 
 	option = {
-		name = swe.swe20.a
+		name = generic.50.a
 		create_wargoal = {
 			type = puppet_wargoal_focus
 			target = FROM

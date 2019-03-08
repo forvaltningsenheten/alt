@@ -3191,7 +3191,7 @@
  generic.swe10.a:0 "[Root.GetName] stands with its brothers."
  generic.swe10.b:0 "[Root.GetName] can only survive on its own."
 
- swe.nor20.t:0 "[From.GetName] Refuses to Join [Root.GetFactionName]"
- swe.nor20.d:0 "In a foolish act of imagined self-preservation, [From.GetLeader] today announced that [From.GetName] will refrain from any diplomatic action that may be seen as threatening to their powerful neighbors. It has therefore declined our request that they join the [Root.GetFactionName]."
- swec.nor20.a:0 "The only safety is standing together.
+ generic.50.t:0 "[From.GetName] Refuses to Join [Root.GetFactionName]"
+ generic.50.d:0 "In a foolish act of imagined self-preservation, [From.GetLeader] today announced that [From.GetName] will refrain from any diplomatic action that may be seen as threatening to their powerful neighbors. It has therefore declined our request that they join the [Root.GetFactionName]."
+ generic.50.a:0 "The only safety is standing together.
 
