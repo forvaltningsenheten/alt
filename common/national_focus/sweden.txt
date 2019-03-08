@@ -69,7 +69,8 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			NOR = { country_event = { id = generic.swe10 = 1 }
+			NOR = {
+				country_event = { id = generic.61 days = 1 }
 			}
 		}
 	}

@@ -30,9 +30,9 @@ country_event = {
 ###Norway gets event#####
 
 country_event = {
-	id = generic.swe10
-	title = generic.swe10.t
-	desc = generic.swe10.d
+	id = generic.61
+	title = generic.61.t
+	desc = generic.61.d
 	picture = GFX_report_event_german_speech
 	
 	is_triggered_only = no
@@ -45,7 +45,7 @@ country_event = {
 	}	
 	
 	option = { #Enter alliance
-		name = generic.swe10.a
+		name = generic.61.a
 		ai_chance = { 
 			factor = 100
 		}
@@ -62,43 +62,28 @@ country_event = {
 	}
 		}
 	option = { #refuse alliance
-		name = generic.swe10.b
+		name = generic.61.b
 		SWE = {
-		country_event = { id = generic.50 days = 1 }
+		country_event = { id = generic.50 }
 		}
 		ai_chance = {
 			factor = 10
 		}
-		effect_tooltip = {
-			SWE = {
-				create_wargoal = {
-					type = puppet_wargoal_focus
-					target = ROOT
-				}
-			}
-		}
-
 	}
- 	
 }
 
 country_event = {
 	id = generic.50
 	title = generic.50.t
-	desc = genric.50.d
+	desc = generic.50.d
 	picture = GFX_report_event_polish_tanks_01
 	
 	is_triggered_only = yes
 
 	option = {
 		name = generic.50.a
-		create_wargoal = {
-			type = puppet_wargoal_focus
-			target = FROM
-		}
 	}
 }
-
 
 # President dies
 country_event = {
