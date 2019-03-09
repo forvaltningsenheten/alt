@@ -1886,7 +1886,7 @@
  SWE_modern_tank_artillery_equipment_1:0 "Stormartillerivagn 45"
  SWE_modern_tank_artillery_equipment_1_short:0 "Sav/45"
 
- 
+
  USA_light_tank_destroyer_equipment_1:0 "M6 Gun Motor Carriage"
  USA_light_tank_destroyer_equipment_1_short:0 "M6 GMC"
  USA_light_tank_destroyer_equipment_2:0 "T56 Gun Motor Carriage"
@@ -1992,8 +1992,6 @@
  GER_light_tank_equipment_3_desc:0 "The VK1602 Leopard was a planned German reconnaissance vehicle designed in 1942. It was planned to arm the vehicle with the 75mm Kwk 41, although that was changed to a smaller 50mm cannon. The VK 1602 had sloped frontal armor, influenced by the Panther medium tank. In order to increase cross-country performance, the VK 1602 was fitted with 350mm wide tracks."
  ENG_light_tank_equipment_2:0 "Matilda"
  ENG_light_tank_equipment_2_short:0 "Matilda"
- SWE_light_tank_equipment_2:0 "Landsverk L-60"
- SWE_light_tank_equipment_2_short:0 "Strv L-60"
  USA_light_tank_equipment_2:0 "M3 Stuart"
  USA_light_tank_equipment_2_short:0 "M3 Stuart"
  SOV_light_tank_equipment_2:0 "BT-7"
