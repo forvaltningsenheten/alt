@@ -1815,9 +1815,10 @@
  # SWE_medium_tank_artillery_equipment_1:0 "Stormartillerivagn Lago"
  # SWE_medium_tank_artillery_equipment_1_short:0 "Sav/Lago"
  
- # SWE_medium_tank_equipment_2:0 "Landsverk Lago II"
- # SWE_medium_tank_equipment_2_short:0 "Strv. m/42"
- 
+ SWE_medium_tank_equipment_2:0 "Stridsvagn m/42"
+ SWE_medium_tank_equipment_2_short:0 "Strv. m/42"
+ SWE_medium_tank_equipment_2_desc:0 "Built by Landsverk AB. Även kallad Lago"
+
  # SWE_medium_tank_aa_equipment_2:0 "Luftvärnskanonvagn 42"
  # SWE_medium_tank_aa_equipment_2_short:0 "Lvkv/42"
  # SWE_medium_tank_destroyer_equipment_2:0 "Pansarvärnskanonvagn 42"
@@ -1825,8 +1826,9 @@
  # SWE_medium_tank_artillery_equipment_2:0 "Stormartillerivagn 42"
  # SWE_medium_tank_artillery_equipment_2_short:0 "Sav/42"
   
- # SWE_medium_tank_equipment_3:0 "Landsverk Leo"
- # SWE_medium_tank_equipment_3_short:0 "Leo"
+ SWE_medium_tank_equipment_3:0 "Stridsvagn m/42 TH"
+ SWE_medium_tank_equipment_3_short:0 "Strv m/42 TH"
+ SWE_medium_tank_equipment_3_desc:0 "Strv m/42 TH tillverkad av Landsverk AB. Även kallad Lago III"
  
  # SWE_medium_tank_aa_equipment_3:0 "Luftvärnskanonvagn 43"
  # SWE_medium_tank_aa_equipment_3_short:0 "Lvkv/43"
@@ -2130,8 +2132,6 @@
  GER_medium_tank_equipment_2:0 "Panzerkampfwagen IV"
  GER_medium_tank_equipment_2_short:0 "Panzer IV"
  GER_medium_tank_equipment_2_desc:0 "Designed as an infantry-support tank, the Panzer IV was not originally intended to engage enemy armor - that function was performed by the lighter Panzer III. However, with the flaws of pre-war doctrine becoming apparent and in the face of Soviet T-34 tanks, the Panzer IV soon assumed the tank-fighting role of its increasingly obsolete cousin. The most widely manufactured and deployed German tank of the Second World War, the Panzer IV was used as the base for many other fighting vehicles."
- SWE_medium_tank_equipment_2:0 "Stridsvagn m/42"
- SWE_medium_tank_equipment_2_short:0 "Strv m/42"
  ENG_medium_tank_equipment_2:0 "Cromwell"
  ENG_medium_tank_equipment_2_short:0 "Cromwell"
  USA_medium_tank_equipment_2:0 "M4 Sherman"
