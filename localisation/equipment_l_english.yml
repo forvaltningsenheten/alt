@@ -1772,8 +1772,10 @@
  SWE_gw_tank_equipment_short:0 "Strv m/21-29"
  SWE_gw_tank_equipment_desc:0 "Pre-war tank made by Landsverk and NOHAB"
  
- SWE_light_tank_equipment_1:0 "Landsverk L-10"
+ SWE_light_tank_equipment_1:0 "Stridsvagn m/31"
  SWE_light_tank_equipment_1_short:0 "Strv. m/31"
+ SWE_light_tank_equipment_1_desc:0 "Built by Landsverk AB"
+
  
  SWE_light_tank_aa_equipment_1:0 "Luftvärnskanonvagn 31"
  SWE_light_tank_aa_equipment_1_short:0 "Lvkv/31"
@@ -1883,6 +1885,8 @@
  SWE_modern_tank_aa_equipment_1_short:0 "Lvkv/45"
  SWE_modern_tank_artillery_equipment_1:0 "Stormartillerivagn 45"
  SWE_modern_tank_artillery_equipment_1_short:0 "Sav/45"
+
+ 
  USA_light_tank_destroyer_equipment_1:0 "M6 Gun Motor Carriage"
  USA_light_tank_destroyer_equipment_1_short:0 "M6 GMC"
  USA_light_tank_destroyer_equipment_2:0 "T56 Gun Motor Carriage"
