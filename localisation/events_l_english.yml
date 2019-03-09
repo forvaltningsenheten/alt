@@ -3195,3 +3195,22 @@
  generic.50.d:0 "In a foolish act of imagined self-preservation, [From.GetLeader] today announced that [From.GetName] will refrain from any diplomatic action that may be seen as threatening to their powerful neighbors. It has therefore declined our request that they join the [Root.GetFactionName]."
  generic.50.a:0 "The only safety is standing together."
 
+
+ generic.70.t:0 "Sweden requests Denmarks Participation in the faction Guardians of the North" 
+ generic.70.d:0 "With the signing of a treaty of friendship between our nations, Sweden has requested that Denmark joins them in their faction, Guardians of the North, to unite against the growing threats that surround our nations. Whether communist or fascist, [From.GetName] promises to stand up for [Root.GetAdjective] interests."
+ generic.70.a:0 "Denmark stands with its brothers."
+ generic.70.b:0 "Denmark can only survive on its own."
+
+ generic.80.t:0 "Denmark Refuses to Join [Root.GetFactionName]"
+ generic.80.d:0 "In a foolish act of imagined self-preservation, [From.GetLeader] today announced that [From.GetName] will refrain from any diplomatic action that may be seen as threatening to their powerful neighbors. It has therefore declined our request that they join the [Root.GetFactionName]."
+ generic.80.a:0 "The only safety is standing together."
+
+ finland.31.t:0 "Sweden requests Finland Participation in the faction Guardians of the North" 
+ finland.31.d:0 "With the signing of a treaty of friendship between our nations, Sweden has requested that Finland joins them in their faction, Guardians of the North, to unite against the growing threats that surround our nations. Whether communist or fascist, [From.GetName] promises to stand up for [Root.GetAdjective] interests."
+ finland.31.a:0 "Finland stands with its brothers."
+ finland.31.b:0 "Finland can only survive on its own."
+
+ finland.90.t:0 "finland Refuses to Join [Root.GetFactionName]"
+ finland.90.d:0 "In a foolish act of imagined self-preservation, [From.GetLeader] today announced that [From.GetName] will refrain from any diplomatic action that may be seen as threatening to their powerful neighbors. It has therefore declined our request that they join the [Root.GetFactionName]."
+ finland.90.a:0 "The only safety is standing together."
+

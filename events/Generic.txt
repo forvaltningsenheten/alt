@@ -72,6 +72,115 @@ country_event = {
 	}
 }
 
+
+###Den gets event#####
+
+country_event = {
+	id = generic.70
+	title = generic.70.t
+	desc = generic.70.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SWE
+		SWE = { has_completed_focus = swe_inv_denmark }
+	}	
+	
+	option = { #Enter alliance
+		name = generic.70.a
+		ai_chance = { 
+			factor = 100
+		}
+		SWE = {
+			add_to_faction = ROOT
+			ROOT = {
+				add_ai_strategy = {
+					type = alliance
+					id = "SWE"
+					value = 200
+				}
+			}
+			
+	}
+		}
+	option = { #refuse alliance
+		name = generic.70.b
+		SWE = {
+		country_event = { id = generic.80 }
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+
+###finland gets event#####
+
+country_event = {
+	id = finland.31
+	title = finland.31.t
+	desc = finland.31.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SWE
+		SWE = { has_completed_focus = swe_inv_finland }
+	}	
+	
+	option = { #Enter alliance
+		name = finland.31.a
+		ai_chance = { 
+			factor = 100
+		}
+		SWE = {
+			add_to_faction = ROOT
+			ROOT = {
+				add_ai_strategy = {
+					type = alliance
+					id = "SWE"
+					value = 200
+				}
+			}
+			
+	}
+		}
+	option = { #refuse alliance
+		name = generic.31.b
+		SWE = {
+		country_event = { id = finland.31 }
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+
+
+
+
+#finland refuse event#
+country_event = {
+	id = finland.90
+	title = finland.90.t
+	desc = finland.90.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+
+	option = {
+		name = finland.90.a
+	}
+}
+
+#Norway refuse event#
 country_event = {
 	id = generic.50
 	title = generic.50.t
@@ -84,6 +193,25 @@ country_event = {
 		name = generic.50.a
 	}
 }
+
+
+
+
+###Denmark refuse event###
+country_event = {
+	id = generic.80
+	title = generic.80.t
+	desc = generic.80.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+
+	option = {
+		name = generic.80.a
+	}
+}
+
+
 
 # President dies
 country_event = {
