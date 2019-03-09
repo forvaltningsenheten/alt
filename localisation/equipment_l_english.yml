@@ -1837,6 +1837,18 @@
  # SWE_medium_tank_artillery_equipment_3:0 "Stormartillerivagn 43"
  # SWE_medium_tank_artillery_equipment_3_short:0 "Sav/43"
  
+ SWE_modern_tank_equipment_1:1 "Stridsvagn 81"
+ SWE_modern_tank_equipment_1_short:1 "Strv 81"
+ SWE_modern_tank_equipment_1_desc:1 "The UK design Centurion. Bought from UK. Can we reverse engineer our own?"
+
+ 
+ # SWE_modern_tank_destroyer_equipment_1:0 "Pansarvärnskanonvagn 45"
+ # SWE_modern_tank_destroyer_equipment_1_short:0 "Pvkv/45"
+ # SWE_modern_tank_aa_equipment_1:0 "Luftvärnskanonvagn 45"
+ # SWE_modern_tank_aa_equipment_1_short:0 "Lvkv/45"
+ # SWE_modern_tank_artillery_equipment_1:0 "Stormartillerivagn 45"
+ # SWE_modern_tank_artillery_equipment_1_short:0 "Sav/45"
+
  # SWE_heavy_tank_equipment_1:0 "Stortraktorn Landsverk-Gutehoffnungshütte"
  # SWE_heavy_tank_equipment_1_short:0 "Strv. m/34"
  
@@ -1878,16 +1890,6 @@
  # SWE_super_heavy_tank_artillery_equipment_1:0 "Stormartillerivagn 46"
  # SWE_super_heavy_tank_artillery_equipment_1_short:0 "Sav/46"
  
- # SWE_modern_tank_equipment_1:1 "Landsverk Lansen"
- # SWE_modern_tank_equipment_1_short:1 "Lansen"
- 
- # SWE_modern_tank_destroyer_equipment_1:0 "Pansarvärnskanonvagn 45"
- # SWE_modern_tank_destroyer_equipment_1_short:0 "Pvkv/45"
- # SWE_modern_tank_aa_equipment_1:0 "Luftvärnskanonvagn 45"
- # SWE_modern_tank_aa_equipment_1_short:0 "Lvkv/45"
- # SWE_modern_tank_artillery_equipment_1:0 "Stormartillerivagn 45"
- # SWE_modern_tank_artillery_equipment_1_short:0 "Sav/45"
-
 
  USA_light_tank_destroyer_equipment_1:0 "M6 Gun Motor Carriage"
  USA_light_tank_destroyer_equipment_1_short:0 "M6 GMC"
