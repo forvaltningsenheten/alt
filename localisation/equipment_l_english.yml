@@ -1881,9 +1881,9 @@
  # SWE_heavy_tank_artillery_equipment_3:0 "Stormartillerivagn 44"
  # SWE_heavy_tank_artillery_equipment_3_short:0 "Sav/44"
  
- # SWE_super_heavy_tank_equipment_1:0 "Henschel Tiger II"
- # SWE_super_heavy_tank_equipment_1_short:0 "Kungstigern"
- # SWE_super_heavy_tank_equipment_1_desc:0 "Svenska staten köpte in en Tiger II (Panzerkampfwagen VI Ausf B) från Frankrike år 1947"
+ SWE_super_heavy_tank_equipment_1:0 "Henschel Tiger II"
+ SWE_super_heavy_tank_equipment_1_short:0 "Kungstigern"
+ SWE_super_heavy_tank_equipment_1_desc:0 "Sweden bought a captured Tiger II from the french for testing and unlocking tank technologies. 
  
  # SWE_super_heavy_tank_aa_equipment_1:0 "Luftvärnskanonvagn 46"
  # SWE_super_heavy_tank_aa_equipment_1_short:0 "Lvkv/46"
