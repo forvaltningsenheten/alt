@@ -1795,8 +1795,10 @@
  # SWE_light_tank_artillery_equipment_2_short:0 "Sav/38"
  
  
- # SWE_light_tank_equipment_3:0 "Scania-Vabis m/41"
- # SWE_light_tank_equipment_3_short:0 "Strv. m/41"
+ SWE_light_tank_equipment_3:0 "Stridsvagn m/41"
+ SWE_light_tank_equipment_3_short:0 "Strv m/41"
+ SWE_light_tank_equipment_3_desc:0 "Strv m/41 SII. Light tank with good power to weight ratio"
+
  
  # SWE_light_tank_aa_equipment_3:0 "Luftvärnskanonvagn 41"
  # SWE_light_tank_aa_equipment_3_short:0 "Lvkv/41"
