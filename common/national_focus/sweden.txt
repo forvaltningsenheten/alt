@@ -33,7 +33,7 @@ focus_tree = {
 
 	focus = {
 		id= swe_faction
-		icon = GFX_goal_generic_alliance
+		icon = GFX_focus_usa_union_representation_act
 		prerequisite = { focus = forsvarsdepartementet }
 		prerequisite = { focus = swe_army_effort }
 		prerequisite = { focus = swe_political_effort }
@@ -130,11 +130,11 @@ focus_tree = {
 
 	focus = {
 		id= swe_expansion
-		icon = GFX_focus_eng_global_defense
+		icon = GFX_focus_eng_imperial_federation
 		prerequisite = { focus = forsvarsdepartementet }
 		prerequisite = { focus = swe_army_effort }
 		prerequisite = { focus = swe_political_effort }
-		x = 17
+		x = 16
 		y = 1
 		cost = 5
 		available_if_capitulated = yes
@@ -160,7 +160,7 @@ focus_tree = {
 		id= swe_retake_aland
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = swe_expansion }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = swe_expansion
 		cost = 10
@@ -182,7 +182,7 @@ focus_tree = {
 		id= swe_retake_denmark
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = swe_expansion }
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = swe_expansion
 		cost = 10
@@ -203,7 +203,7 @@ focus_tree = {
 		id= swe_retake_norway
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = swe_expansion }
-		x = -3
+		x = -2
 		y = 1
 		relative_position_id = swe_expansion
 		cost = 10
@@ -223,7 +223,20 @@ focus_tree = {
 
 	}	
 
+	focus = { 
+		id= polistrupperna
+		icon = GFX_goal_tfv_can_forced_quebec_conscription
+		prerequisite = { focus = swe_retake_norway focus = swe_retake_denmark  focus = swe_retake_aland }
+		x = 0
+		y = 2
+		relative_position_id = swe_expansion
+		cost = 10
+		available_if_capitulated = yes
 
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
 	
 
 	##########DEFENCE LINES############
@@ -417,7 +430,7 @@ focus_tree = {
 	focus = {
 		id = swe_army_effort
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 6
+		x = 5
 		y = 0
 		cost = 5
 
@@ -1313,7 +1326,7 @@ focus_tree = {
 	focus = {
 		id = swe_industrial_effort
 		icon = GFX_goal_generic_production
-		x = 0
+		x = -2
 		y = 0
 		cost = 10
 
