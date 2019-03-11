@@ -189,11 +189,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_state_core = 145		
+			add_state_core = 37
+			add_state_core = 99		
 				create_wargoal = {
-					type = take_state_focus
+					type = annex_everything
 					target = DEN
-					generator = { 145 }
+					generator = { 37 }
 				}
 		}
 
