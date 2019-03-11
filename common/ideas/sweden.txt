@@ -55,7 +55,44 @@ ideas = {
 				production_speed_coastal_bunker_factor = 0.1
 			}
 		}
+
+		sweunity = {
+		
+			allowed = {
+				original_tag = SWE
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				naval_speed_factor = 0.1
+				navy_max_range_factor = 0.05
+				navy_submarine_defence_factor = 0.1
+				navy_submarine_attack_factor = 0.1
+				ships_at_battle_start = 0.25
+				naval_hit_chance = 0.1
+				repair_speed_factor = 0.3
+				production_speed_naval_base_factor = 0.2
+			}
+		}
 	
+
+		swepolistrupperna = {
+			
+			allowed = {
+				original_tag = SWE
+				always = no
+			}
+			
+			
+			removal_cost = -1
+
+			modifier = {
+				decryption_factor = 0.1
+				stability_weekly = 0.01
+			}
+		}
 	
 	en_svensk_tiger = {
 			

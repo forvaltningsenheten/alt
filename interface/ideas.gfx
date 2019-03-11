@@ -4018,5 +4018,16 @@ spriteTypes = {
 		name = "GFX_idea_fortfocus"
 		texturefile = "gfx/interface/ideas/idea_generic_fortify_the_borders.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_swepolistrupperna"
+		texturefile = "gfx/interface/ideas/idea_generic_secret_police.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_idea_sweunity"
+		texturefile = "gfx/interface/ideas/idea_generic_naval_manufacturer_2.dds"
+	}
 	
 }

@@ -124,7 +124,24 @@ focus_tree = {
 	}
 
 
+	focus = { 
+		id= unity
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = swe_inv_norway }
+		prerequisite = { focus = swe_inv_denmark }
+		prerequisite = { focus = swe_inv_finland }
+		x = 0
+		y = 2
+		relative_position_id = swe_faction
+		cost = 10
 
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			add_ideas = sweunity
+		}
+	}
 
 	#####Territoral expansion####
 
@@ -235,7 +252,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_stability = 0.1
+			add_ideas = swepolistrupperna
 		}
 	}
 	
@@ -2085,7 +2102,7 @@ focus_tree = {
 	focus = {
 		id = swe_political_effort
 		icon = GFX_goal_generic_demand_territory
-		x = 15
+		x = 10
 		y = 0
 		relative_position_id = forsvarsdepartementet
 		cost = 10

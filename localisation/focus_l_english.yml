@@ -2439,8 +2439,38 @@ swe_nationalism_focus_desc:0 "Our nation is unique, and our political achievemen
 swe_ideological_fanaticism:0 "Ideological Fanaticism"
 swe_ideological_fanaticism_desc:0 "Our politically established values and goals are worth dying for as much as any ancient faith. Any follower should be prepared to face death, and those who stray better be prepared to face death."
 
- 
-  
+###Alliance or expansion####
+
+swe_faction:0 "Guardians of the North"
+swe_faction_desc:0 "The time has come to unite the northern countries under one banner. We shall call this alliance "Guardians of the North"
+
+swe_inv_denmark:0 "Brothers in the South"
+swe_inv_denmark_desc:0 "Invites Denmark to our faction"
+
+swe_inv_norway:0 "Brothers to the West"
+swe_inv_norway_desc:0 "Invites Norway to our faction"
+
+swe_inv_finland:0 "Brothers to the East"
+swe_inv_finland_desc:0 "Invites Finland to our faction"
+
+unity:0 "Unity"
+unity_desc:0 "Now that we stand together we can start joint efforts in diffrent rearmament efforts"
+
+
+polistrupperna:0 "Polisbyrån"
+polistrupperna_desc:0 "With the territorial expansion the threat to our national security from within our own borders will increase. We have to establishing a new organization with a primary goal to counter this growing threat"
+
+swe_expansion:0 "Lejonet Från Norden" 
+swe_expansion_desc:0 "We wont forget who we were! We will take back what was ours once upon time!"
+
+swe_retake_norway:0 "The Golden Lion"
+swe_retake_noway_desc:0 "For to long have our neighbors mocked us because we didnt conquer them during the 17th centuary. Now we will take what is rightfully ours!"
+
+swe_retake_denmark:0 "The Blue Lion"
+swe_retake_denmark_desc:0 "Our soutern province of Skåne is not enough anymore! We need to take it all!"  
+
+swe_retake_aland:0 "The Golden Deer"
+swe_retake_aland_desc:0 "The people of Åland did not want to belong to Finland after the Finnish Declaration of Independence. During 1918 a petition was signed by 96% of Ålands adult population that they wanted to leave Finland. Year 1921 it was decided that Åland will remain a part of Finland. We need to liberate them!"
 
 
 

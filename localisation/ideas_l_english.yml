@@ -2584,6 +2584,9 @@
  MTG_naval_treaty_adherent_reduced:0 "Escalator Clause Invoked"
  MTG_naval_treaty_adherent_reduced_desc:0 "After some signatories of the Washington Naval Treaty have abandoned the London Naval Treaty, we have invoked the Escalator Clause, reducing the restrictions for the size and armament of our capital ships."
  GER_air_safety_regulations:0 "Air Safety Regulations"
+
+###Alt Sweden###
+
  frivillig:0 "Frivillighetsorgansiationer"
  frivillig_desc:0 "Frivillighetsorgansiationerna are serveral diffrent volounteer ogranizations to support the main army"
  beredskapsfilmer:0 "Beredskapsfilmer"
@@ -2592,5 +2595,9 @@
  hemvarnet_desc:0 "We need to establish a nationalguard. The sole purpose of the swedish nationalguard is to protect and monitor sensitive and strategic areas."
  fortfocus:0 "Rearmament"
  fortfocus_desc:0 "we need to build more"
- 
 
+ swepolistrupperna:0 "Polisbyrån"
+ swepolistrupperna_desc:0 "The new force belonged to the organizational "Generalstaben" and was given the name "Generalstabens första byrå", also called the "Polisbyrån"."
+ 
+ sweunity:0 "Northern Vikings"
+ sweunity_desc:0 "As the brothers stand together they will help eachother"
