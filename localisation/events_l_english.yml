@@ -3214,3 +3214,15 @@
  finland.90.d:0 "In a foolish act of imagined self-preservation, [From.GetLeader] today announced that [From.GetName] will refrain from any diplomatic action that may be seen as threatening to their powerful neighbors. It has therefore declined our request that they join the [Root.GetFactionName]."
  finland.90.a:0 "The only safety is standing together."
 
+ finland.91.t:0 "finland accepts to join Guardians for the North"
+ finland.91.d:0 "The leaders of Finland make it clear to the world they will stand together with their brothers in the north"
+ finland.91.a:0 "We will fight as one!"
+
+ generic.81.t:0 "Denmark accepts to join Guardians for the North"
+ generic.81.d:0 "The leaders of Denmark make it clear to the world they will stand together with their brothers in the north"
+ generic.81.a:0 "We will fith as one!."
+
+ generic.51.t:0 "Norway accepts to join Guardians for the North"
+ generic.51.d:0 "The leaders of Norway make it clear to the world they will stand together with their brothers in the north"
+ generic.51.a:0 "We will fight as one!"
+

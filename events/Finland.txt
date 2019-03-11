@@ -14,14 +14,9 @@ country_event = {
 	desc = finland.31.d
 	picture = GFX_report_event_german_speech
 	
-	is_triggered_only = no
+	is_triggered_only = yes
 	
 	fire_only_once = yes
-	
-	trigger = {
-		tag = SWE
-		SWE = { has_completed_focus = swe_inv_finland }
-	}	
 	
 	option = { #Enter alliance
 		name = finland.31.a
@@ -29,6 +24,7 @@ country_event = {
 			factor = 100
 		}
 		SWE = {
+			country_event = { id = finland.91 }
 			add_to_faction = ROOT
 			ROOT = {
 				add_ai_strategy = {
@@ -43,7 +39,7 @@ country_event = {
 	option = { #refuse alliance
 		name = finland.31.b
 		SWE = {
-		country_event = { id = finland.31 }
+			country_event = { id = finland.90 }
 		}
 		ai_chance = {
 			factor = 10
@@ -67,6 +63,79 @@ country_event = {
 }
 
 
+#Finland accepts###
+country_event = {
+	id = finland.91
+	title = finland.91.t
+	desc = finland.91.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+
+	option = {
+		name = finland.91.a
+	}
+}
+
+#Norway accepts
+country_event = {
+	id = generic.51
+	title = generic.51.t
+	desc = generic.51.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+
+	option = {
+		name = generic.51.a
+	}
+}
+
+#Norway feuse#
+country_event = {
+	id = generic.50
+	title = generic.50.t
+	desc = generic.50.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+
+	option = {
+		name = finland.90.a
+	}
+}
+
+
+
+
+###Denmark accepts invite####
+
+country_event = {
+	id = generic.81
+	title = generic.81.t
+	desc = generic.81.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+
+	option = {
+		name = generic.81.a
+	}
+}
+
+#Denmark refuse#
+country_event = {
+	id = generic.80
+	title = generic.80.t
+	desc = generic.80.d
+	picture = GFX_report_event_polish_tanks_01
+	
+	is_triggered_only = yes
+
+	option = {
+		name = generic.80.a
+	}
+}
 
 
 
