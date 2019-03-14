@@ -2145,7 +2145,7 @@ focus_tree = {
 	focus = {
 		id = swe_political_effort
 		icon = GFX_goal_generic_demand_territory
-		x = 11
+		x = 15
 		y = 0
 		relative_position_id = forsvarsdepartementet
 		cost = 10
@@ -2157,11 +2157,48 @@ focus_tree = {
 		}
 	}
 
+	
+	focus = {
+		id = swe_royalists
+		icon = GFX_focus_rom_royal_dictatorship
+		prerequisite = { focus = swe_political_effort }
+		mutually_exclusive = { focus = swe_collectivist_ethos }
+		mutually_exclusive = { focus = swe_liberty_ethos }
+		x = -3
+		y = 1
+		relative_position_id = swe_political_effort
+		cost= 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea = { idea = royalistsethos days = 1095 }
+		}
+	}
+
+	focus = { 
+		id = swe_royal
+		icon = GFX_focus_rom_royal_dictatorship
+		prerequisite = { focus = swe_royalists }
+		x = 0
+		y = 1
+		relative_position_id = swe_royalists
+		cost= 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_politics = {
+				ruling_party = neutrality
+			}
+		}
+	}
 	focus = {
 		id = swe_collectivist_ethos
 		icon = GFX_goal_generic_national_unity #icon = GFX_goal_tripartite_pact
 		prerequisite = { focus = swe_political_effort }
-		mutually_exclusive = { focus = swe_liberty_ethos}
+		mutually_exclusive = { focus = swe_liberty_ethos }
+		mutually_exclusive = { focus = swe_royalists }
 		available = {
 			OR = {
 				has_government = fascism
@@ -2169,7 +2206,7 @@ focus_tree = {
 				has_government = neutrality
 			}
 		}
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = swe_political_effort
 		cost = 10
@@ -2207,7 +2244,7 @@ focus_tree = {
 				has_government = neutrality
 			}
 		}
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = swe_collectivist_ethos
 		cost = 10
@@ -2258,7 +2295,7 @@ focus_tree = {
 				}
 			}
 		}
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = swe_collectivist_ethos
 		cost = 10
@@ -2297,13 +2334,14 @@ focus_tree = {
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = swe_political_effort }
 		mutually_exclusive = { focus = swe_collectivist_ethos }
+		mutually_exclusive = { focus = swe_royalists }
 		available = {
 			OR = {
 				has_government = democratic
 				has_government = neutrality
 			}
 		}
-		x = 1
+		x = 3
 		y = 1
 		relative_position_id = swe_political_effort
 		cost = 10
