@@ -22,6 +22,12 @@
  envoy_to_germany_desc:0 "We need to send an envoy to reacquire the tanks Germany confiscated from Czechoslovakia"
  
  envoy_to_germany.d:0 "Send the envoy"
+
+ industrial_focus:0 "Industrial Focus"
+ increased_industrial_investment:0 "Increased Industrial Investment"
+
+
+
  
 
 

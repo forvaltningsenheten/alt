@@ -4039,4 +4039,9 @@ spriteTypes = {
 		name = "GFX_idea_royalistsethos"
 		texturefile = "gfx/interface/ideas/idea_rom_iron_guard.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_gengas"
+		texturefile = "gfx/interface/ideas/idea_jap_supremacy_of_will"
+	}
 }

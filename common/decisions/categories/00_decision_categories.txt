@@ -8,6 +8,14 @@ Rearmament = {
 
 ###Envoy to get back our tanks###
 
+industrial_focus = {
+		icon = generic_industry
+		picture = GFX_decision_cat_picture_government_in_exile
+		visible = {
+
+		}
+}
+
 envoy_to_germany = {
 	icon = decision_eng_trade_unions_demand
 	picture = GFX_decision_cat_picture_concessions_to_the_trade_unions

@@ -2314,7 +2314,7 @@
  
  ###Equipment Chain###
 
- cania_Vabis:0 "Scania-Vabis AB"
+ Scania_Vabis:0 "Scania-Vabis AB"
  Scania_Vabis_desc:0 ""Vagnsfabriks-Aktieboklaget i Södertälje" and "Maskinfabriksaktiebolaget Scania" have merged. They have together come up with a series truck-designs for swedish needs. They are called "Scania_vabis335/345/355."
  reachout:0 "Reach Out"
  reachout_desc:0 "Our production can't keep up with our need for armor. We need to reach out to other countries."
@@ -2526,6 +2526,25 @@ swe_mechanization_effort_desc:0 "Rethinking the possibilities of motorized infan
 
 swe_royalists:0 "Patriotic Ethos"
 swe_royalists_desc:0 "We will stand united under one man"
+
+swe_royal:0 "Kungafamiljen"
+swe_royal_desc:0 "We should unite Sweden under our true Leader, The King!"
+
+skf:0 "SKF"
+skf_desc:0 "Svenska Kullagerfabriken is a major producer of ball bearings, a very strategic resource during wartime."
+
+swedishsteel:0 "Swedish Steel"
+swedishsteel_desc:0 "Our steel is one of the finest. Every country in the world depends on high-grade steel for their warmachine, and we have plently of it! We should focus on explanding our steel industry."
+
+gengas:0 "Gengas"
+gengas_desc:0 "With oil beeing a strategic resource in the warmachine, our civilian cars have to find other means to make their vehicles run"
+
+swe_sj:0 "Kungliga Järnvägsstyrelsen"
+swe_sj_desc:0 "With increased industry, we have to expand our infrastructure across Sweden"
+
+inlandsbanan:0 "Inlandsbanan"
+inlandsbanan_desc:0 "We should focus our efforts on constructin a railway through Sweden. We need to make sure our iron mined in the north can reach the southern parts of Sweden"
+
 
 
 
