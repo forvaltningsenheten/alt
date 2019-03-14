@@ -4029,5 +4029,10 @@ spriteTypes = {
 		name = "GFX_idea_sweunity"
 		texturefile = "gfx/interface/ideas/idea_generic_naval_manufacturer_2.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_FRA"
+		texturefile = "gfx/interface/ideas/idea_rom_iron_guard.dds"
+	}
 	
 }

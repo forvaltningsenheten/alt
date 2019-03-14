@@ -31,6 +31,7 @@ focus_tree = {
 
 	######Own Faction#####
 
+
 	focus = {
 		id= swe_faction
 		icon = GFX_focus_usa_union_representation_act
@@ -615,6 +616,48 @@ focus_tree = {
 		}
 	}
 
+
+	focus = {
+		id = kryptoavdelningen
+		icon = GFX_goal_generic_radar
+		prerequisite = { focus = doctrine_effort1 }
+		x = 2
+		y = 1
+		relative_position_id = doctrine_effort1
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_tech_bonus = {
+					name = electronics_bonus
+					bonus = 0.75
+					uses = 3
+					category = electronics
+			}
+		}
+	}
+
+	focus = {
+		id = FRA
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = kryptoavdelningen }
+		x = 0
+		y = 1
+		relative_position_id = kryptoavdelningen
+		cost = 10
+		available_if_capitulated = yes
+
+		available = {
+			date > 1942.6.30
+			}
+
+		completion_reward = { 
+			add_ideas = FRA
+		}
+	}
+
+
 	focus = {
 		id = FMV_3
 		icon = GFX_goal_generic_army_artillery2
@@ -828,7 +871,7 @@ focus_tree = {
 		id = aviation_effort_21
 		icon = GFX_goal_generic_build_airforce
 		prerequisite = { focus = forsvarsdepartementet }
-		x = 3
+		x = 6
 		y = 1
 		relative_position_id = forsvarsdepartementet
 		cost = 10
@@ -2102,7 +2145,7 @@ focus_tree = {
 	focus = {
 		id = swe_political_effort
 		icon = GFX_goal_generic_demand_territory
-		x = 10
+		x = 13
 		y = 0
 		relative_position_id = forsvarsdepartementet
 		cost = 10
@@ -2598,8 +2641,8 @@ focus_tree = {
 	focus = {
 		id = swe_technology_sharing
 		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = polistrupperna focus = unity }
 		available = {
-			has_war = yes
 			is_in_faction = yes
 			OR = {
 				num_of_factories > 50
@@ -2609,9 +2652,9 @@ focus_tree = {
 				}
 			}
 		}		
-		x = 1
-		y = 1
-		relative_position_id = swe_ideological_fanaticism
+		x = 3
+		y = 3
+		relative_position_id = swe_expansion
 		cost = 10
 
 		available_if_capitulated = yes
