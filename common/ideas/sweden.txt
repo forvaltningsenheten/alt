@@ -1,7 +1,7 @@
 ideas = {
-	country = {
 
-			beredskap = {
+	country = {
+		beredskap = {
 			
 			allowed = {
 				always = no
@@ -166,7 +166,7 @@ ideas = {
 			}
 		}
 	
-	en_svensk_tiger = {
+		en_svensk_tiger = {
 			
 			allowed = {
 				always = no
@@ -185,6 +185,7 @@ ideas = {
 				enemy_justify_war_goal_time = 0.1
 			}
 		}
+	}	
 	
 	political_advisor = {
 
@@ -646,8 +647,6 @@ ideas = {
 			}
 		}
 		scania = {
-			
-
 			
 			allowed = {
 				original_tag = SWE
