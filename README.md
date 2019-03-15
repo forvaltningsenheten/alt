@@ -26,7 +26,7 @@ New Focuses for:
 [h1]
 [list]
 [*]Sweden
-[*] List[/list]
+[/list]
 [/h1]
 
 [h1] This is a work in progress and new updates will be pushed quite often with new content [/h1]

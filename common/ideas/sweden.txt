@@ -1,6 +1,34 @@
 ideas = {
 	country = {
 
+			beredskap = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			picture = chi_army_corruption3
+			
+			modifier = {
+				fuel_gain_factor = 0.2
+				fuel_gain_factor_from_states = 0.1
+				war_support_weekly = -0.05
+				conversion_cost_civ_to_mil_factor = 0.2
+				production_factory_max_efficiency_factor = -0.1
+				production_speed_bunker_factor = -0.2
+				production_speed_coastal_bunker_factor = -0.2
+				production_speed_anti_air_building_factor = -0.2
+				production_speed_dockyard_factor = -0.2
+				mobilization_laws_cost_factor = 0.25
+				enemy_justify_war_goal_time = 0.1
+			}
+		}
 
 		gengas = {
 			allowed = {

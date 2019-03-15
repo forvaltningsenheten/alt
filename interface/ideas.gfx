@@ -4042,6 +4042,13 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_gengas"
-		texturefile = "gfx/interface/ideas/idea_jap_supremacy_of_will"
+		texturefile = "gfx/interface/ideas/idea_jap_supremacy_of_will.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_beredskap"
+		texturefile = "gfx/interface/ideas/idea_chi_army_corruption3.dds"
+	}
+
+
 }

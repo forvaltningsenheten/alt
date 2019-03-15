@@ -454,6 +454,7 @@ focus = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			remove_ideas = beredskap
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -548,6 +549,30 @@ focus = {
 		}
 	}
 	
+	
+	focus = {
+		id = swe_fortifyaland
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = havsbandslinjen }
+		x = 0
+		y = 1
+		relative_position_id = havsbandslinjen
+		cost = 10
+		
+		available_if_capitulated = yes
+		
+		available = {
+			SWE= { controls_state = 145 }
+			}
+		
+		completion_reward = {
+			145 = {
+			add_building_construction = { type = coastal_bunker province = 9228 level = 4 instant_build = yes }
+			}
+		}	
+	}
+	
+
 	focus = {
 		id= skanelinjen
 		icon = GFX_idea_hol_prepare_the_inundation_lines
@@ -701,6 +726,11 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			hidden_effect = {
+				SWE = {
+				country_event = { id = generic.62 days = 1 }
+				}
+			}
 			army_experience = 10
 			add_tech_bonus = {
 				name = land_doc_bonus
@@ -1333,114 +1363,60 @@ focus = {
 			}
 		}
 
-		complete_tooltip = {
-			navy_experience = 25
-			add_extra_state_shared_building_slots = 3
-			add_building_construction = {
-				type = dockyard
-				level = 3
-				instant_build = yes
-			}
-		}
-		
+
 		completion_reward = {
+			140 = {
+				add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+			}		
 			navy_experience = 30
-			if = {
-				limit = {
-					NOT = {
-						any_owned_state = {
-							dockyard > 0
-							free_building_slots = {
-								building = dockyard
-								size > 2
-								include_locked = yes
-							}
-						}
-					}
-					any_owned_state = {
-						is_coastal = yes
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-				set_country_flag = naval_effort_built
-			}
-			if = {
-				limit = {
-					NOT = { has_country_flag = naval_effort_built }
-					any_owned_state = {
-						dockyard > 0
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						dockyard > 0
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-				set_country_flag = naval_effort_built
-			}
-			if = {
-				limit = {
-					NOT = { has_country_flag = naval_effort_built }
-					NOT = {
-						any_owned_state = {
-							free_building_slots = {
-								building = dockyard
-								size > 2
-								include_locked = yes
-							}
-						}
-					}
-				}
-				random_state = {
-					limit = {
-						controller = { tag = ROOT }
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-			}			
 		}
 	}
+
+	focus = {
+		id = varven_2
+		icon = GFX_goal_generic_construct_naval_dockyard	
+		prerequisite = { focus = varven }
+		x = 0
+		y = 4
+		relative_position_id = varven
+		cost = 10
+
+		available_if_capitulated = yes
+
+		available = {
+			SWE= { controls_state = 124 }
+			}
+
+		completion_reward = {
+			124 = {
+				add_building_construction = {
+					type = coastal_bunker
+					province = 408
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					province = 408
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+			
+		}
+	}
+
 
 	focus = {
 		id = flexible_navy1
