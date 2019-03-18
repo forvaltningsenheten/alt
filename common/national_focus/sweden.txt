@@ -309,13 +309,16 @@ focus = {
 	focus = { 
 		id= unity
 		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = swe_inv_norway }
-		prerequisite = { focus = swe_inv_denmark }
-		prerequisite = { focus = swe_inv_finland }
+		prerequisite = { focus = swe_inv_norway focus = swe_inv_finland focus = swe_inv_denmark }
 		x = 0
 		y = 2
 		relative_position_id = swe_faction
 		cost = 10
+
+		vailable = {
+			is_in_faction = yes
+			}
+
 
 		ai_will_do = {
 			factor = 10
@@ -1833,7 +1836,11 @@ focus = {
 			set_politics = {
 				ruling_party = neutrality
 			}
-		}
+			set_rule = {
+				can_send_volunteers = yes
+			}
+		}	
+
 	}
 	focus = {
 		id = swe_collectivist_ethos

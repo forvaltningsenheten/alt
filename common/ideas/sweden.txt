@@ -78,8 +78,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				communism_drift = -0.1
-				democratic_drift = -1.5
+				communism_drift = -0.02
+				democratic_drift = -0.02
 
 			}	
 		
