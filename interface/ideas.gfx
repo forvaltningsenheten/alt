@@ -4050,5 +4050,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_chi_army_corruption3.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_refugees"
+		texturefile = "gfx/interface/ideas/idea_prc_the_long_march2.dds"
+	}
+
+
 
 }

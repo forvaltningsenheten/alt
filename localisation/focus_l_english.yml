@@ -2551,6 +2551,9 @@ swe_fortifyaland_desc:0 "Åland is a strategic position in the baltic sea. We sh
 varven_2:0 "Gotlands Shipyards"
 varven_2_desc:0 "We should focus on building a shipyard at Fårösund, the northern part of Gotland
 
+refugees:0 "Refugees"
+refugees_desc:0 "With war beeing waged across Europe people are fleeing their homes"
+
 
 
  

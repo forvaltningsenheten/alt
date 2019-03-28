@@ -752,6 +752,30 @@ focus = {
 	}
 
 	focus = {
+		id = refugees
+		icon = GFX_goal_generic_improve_relations
+		x = 37
+		y = 1
+		prerequisite = { focus = swe_political_effort}
+		cost = 5
+
+		available_if_capitulated = yes
+		available = {
+			SOV = {
+				has_war = yes
+			}
+			GER = {
+				has_war = yes
+			}
+		}
+
+		completion_reward = {
+			add_ideas = refugees
+			}
+	}	
+
+
+	focus = {
 		id = FMV
 		icon = GFX_focus_mex_privatisation
 		prerequisite = { focus = swe_army_effort }

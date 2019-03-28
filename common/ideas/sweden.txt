@@ -40,6 +40,18 @@ ideas = {
 				fuel_gain_factor = 0.2
 			}
 		}
+
+		refugees = {
+			allowed = {
+				always = no
+				}
+
+			removal_cost = -1
+
+			modifier = {
+				MONTHLY_POPULATION = 0.05
+			}
+		}
 	
 		frivillig = {
 			
