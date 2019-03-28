@@ -107,7 +107,7 @@ country_event = {
 			factor = 100
 		}
 		SWE = {
-			country_event = { id = generic.81 }
+			country_event = { id = finland.81 }
 			add_to_faction = ROOT
 			ROOT = {
 				add_ai_strategy = {
@@ -122,7 +122,7 @@ country_event = {
 	option = { #refuse alliance
 		name = generic.70.b
 		SWE = {
-			country_event = { id = generic.80 }
+			country_event = { id = finland.80 }
 		}
 		ai_chance = {
 			factor = 10
@@ -206,16 +206,17 @@ country_event = {
 
 
 ###Denmark refuse event###
+
 country_event = {
-	id = generic.80
-	title = generic.80.t
-	desc = generic.80.d
+	id = finland.80
+	title = finland.80.t
+	desc = finland.80.d
 	picture = GFX_report_event_polish_tanks_01
 	
 	is_triggered_only = yes
 
 	option = {
-		name = generic.80.a
+		name = finland.80.a
 	}
 }
 

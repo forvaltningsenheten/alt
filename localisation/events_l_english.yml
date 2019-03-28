@@ -3201,9 +3201,9 @@
  generic.70.a:0 "Denmark stands with its brothers."
  generic.70.b:0 "Denmark can only survive on its own."
 
- generic.80.t:0 "Denmark Refuses to Join [Root.GetFactionName]"
- generic.80.d:0 "In a foolish act of imagined self-preservation, [From.GetLeader] today announced that [From.GetName] will refrain from any diplomatic action that may be seen as threatening to their powerful neighbors. It has therefore declined our request that they join the [Root.GetFactionName]."
- generic.80.a:0 "The only safety is standing together."
+ finland.80.t:0 "Denmark Refuses to Join [Root.GetFactionName]"
+ finland.80.d:0 "In a foolish act of imagined self-preservation, [From.GetLeader] today announced that [From.GetName] will refrain from any diplomatic action that may be seen as threatening to their powerful neighbors. It has therefore declined our request that they join the [Root.GetFactionName]."
+ finland.80.a:0 "The only safety is standing together."
 
  finland.31.t:0 "Sweden requests Finland Participation in the faction Guardians of the North" 
  finland.31.d:0 "With the signing of a treaty of friendship between our nations, Sweden has requested that Finland joins them in their faction, Guardians of the North, to unite against the growing threats that surround our nations. Whether communist or fascist, [From.GetName] promises to stand up for [Root.GetAdjective] interests."
@@ -3218,9 +3218,9 @@
  finland.91.d:0 "The leaders of Finland make it clear to the world they will stand together with their brothers in the north"
  finland.91.a:0 "We will fight as one!"
 
- generic.81.t:0 "Denmark accepts to join Guardians for the North"
- generic.81.d:0 "The leaders of Denmark make it clear to the world they will stand together with their brothers in the north"
- generic.81.a:0 "We will fith as one!."
+ finland.81.t:0 "Denmark accepts to join Guardians for the North"
+ finland.81.d:0 "The leaders of Denmark make it clear to the world they will stand together with their brothers in the north"
+ finland.81.a:0 "We will figth as one!."
 
  generic.51.t:0 "Norway accepts to join Guardians for the North"
  generic.51.d:0 "The leaders of Norway make it clear to the world they will stand together with their brothers in the north"

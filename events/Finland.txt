@@ -1,4 +1,4 @@
-﻿###########################
+§###########################
 # Finland Events
 ###########################
 
@@ -113,29 +113,30 @@ country_event = {
 ###Denmark accepts invite####
 
 country_event = {
-	id = generic.81
-	title = generic.81.t
-	desc = generic.81.d
+	id = finland.81
+	title = finland.81.t
+	desc = finland.81.d
 	picture = GFX_report_event_polish_tanks_01
 	
 	is_triggered_only = yes
 
 	option = {
-		name = generic.81.a
+		name = finland.81.a
 	}
 }
 
 #Denmark refuse#
+
 country_event = {
-	id = generic.80
-	title = generic.80.t
-	desc = generic.80.d
+	id = finland.80
+	title = finland.80.t
+	desc = finland.80.d
 	picture = GFX_report_event_polish_tanks_01
 	
 	is_triggered_only = yes
 
 	option = {
-		name = generic.80.a
+		name = finland.80.a
 	}
 }
 

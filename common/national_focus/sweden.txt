@@ -602,8 +602,8 @@ focus = {
 				add_building_construction = { type = coastal_bunker province = 9279 level = 2 instant_build = yes }
 				add_building_construction = { type = coastal_bunker province = 11376 level = 2 instant_build = yes }
 				add_building_construction = { type = coastal_bunker province = 6120 level = 2 instant_build = yes }
-				add_building_construction = { type = coastal_bunker province = 1160 level = 2 instant_build = yes }
-				add_building_construction = { type = coastal_bunker province = 11372 level = 2 instant_build = yes }
+				add_building_construction = { type = coastal_bunker province = 11160 level = 2 instant_build = yes }
+				add_building_construction = { type = coastal_bunker province = 11327 level = 2 instant_build = yes }
 			}
 		}
 	}
@@ -713,6 +713,13 @@ focus = {
 		cost = 10
 		
 		available_if_capitulated = yes
+		available = {
+			NOT = {
+				SWE = {
+					has_war_with = GER
+				}
+			}
+		}
 		
 		completion_reward = {
 			SWE = {country_event = {id = generic.30 } }
@@ -1538,7 +1545,7 @@ focus = {
 	focus = {
 		id = cruiser_effort1
 		icon = GFX_focus_generic_cruiser2
-		prerequisite = { focus = large_navy1 focus = flexible_navy1 }
+		prerequisite = { focus = large_navy1 }
 		x = 0
 		y = 1
 		relative_position_id = large_navy1
@@ -1575,7 +1582,7 @@ focus = {
 	focus = {
 		id = destroyer_effort1
 		icon = GFX_focus_generic_destroyer
-		prerequisite = { focus = flexible_navy1 focus = large_navy1 }
+		prerequisite = { focus = flexible_navy1 }
 		x = 0
 		y = 1
 		relative_position_id = flexible_navy1
