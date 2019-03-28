@@ -1695,8 +1695,7 @@ focus = {
 		}
 	}
 
-	f
-	
+
 	
 	focus = {
 		id = swe_nuclear_effort
